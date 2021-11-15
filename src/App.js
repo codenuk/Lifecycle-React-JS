@@ -1,10 +1,9 @@
-import React from 'react'
-
+import React from "react";
 
 // Mounting
 // class App extends React.Component {
 //   constructor(props) {
-//     console.log('constructor')
+//     console.log('step 1) constructor')
 //     super(props);
 //     this.state = {
 //         counter: 0,
@@ -12,15 +11,16 @@ import React from 'react'
 //   }
 
 //   componentDidMount() {
-//     console.log('componentDidMount')
+//     console.log('step 3) componentDidMount')
 //     this.setState({counter: 100})
 //   }
-  
+
 //   render() {
+//     console.log('step 2) render')
 //     return (
 //       <div>
 //         <h1>{this.state.counter}</h1>
-//         <button type="button" onClick={() => 
+//         <button type="button" onClick={() =>
 //             this.setState({counter: this.state.counter + 1}) }
 //         >เพิ่ม</button>
 //       </div>
@@ -28,26 +28,35 @@ import React from 'react'
 //   }
 // }
 
-
 // // Updating
 // class App extends React.Component {
 //   constructor(props) {
-//     console.log('constructor')
+//     console.log("step 1) constructor");
 //     super(props);
 //     this.state = {
-//         counter: 0
-//     }
+//       counter: 0,
+//     };
+//   }
+//   componentDidMount() {
+//     console.log("step 3) componentDidMount");
 //   }
 
 //   componentDidUpdate(prevProps, prevState) {
-//     console.log('prevProps', prevProps, 'prevState', prevState )
+//     console.log("step 4) componentDidMount");
+//     console.log("prevProps", prevProps, "prevState", prevState);
 //   }
 
 //   render() {
+//     console.log("step 2) render");
 //     return (
 //       <div>
 //         <h1>{this.state.counter}</h1>
-//         <button type="button" onClick={() => this.setState({counter: this.state.counter + 1}) }>เพิ่ม</button>
+//         <button
+//           type="button"
+//           onClick={() => this.setState({ counter: this.state.counter + 1 })}
+//         >
+//           เพิ่ม
+//         </button>
 //       </div>
 //     );
 //   }
@@ -61,7 +70,7 @@ class App extends React.Component {
         isShow: true
     }
   }
-
+  
   render() {
     return (
       <div>
@@ -70,7 +79,7 @@ class App extends React.Component {
         <div>
           {this.state.isShow ? <ChildComponent /> : null}
 
-          <button type="button" onClick={() => 
+          <button type="button" onClick={() =>
             this.setState({isShow: !this.state.isShow}) }
           >
             {this.state.isShow ? 'delete' : 'show'}
@@ -93,7 +102,7 @@ class ChildComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>ChildComponant</h1>
+        <h1>ChildComponant นะจ๊ะ</h1>
       </div>
     );
   }
