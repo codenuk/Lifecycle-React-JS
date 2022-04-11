@@ -28,7 +28,7 @@ import React from "react";
 //   }
 // }
 
-// // Updating
+// Updating
 // class App extends React.Component {
 //   constructor(props) {
 //     console.log("step 1) constructor");
@@ -42,7 +42,7 @@ import React from "react";
 //   }
 
 //   componentDidUpdate(prevProps, prevState) {
-//     console.log("step 4) componentDidMount");
+//     console.log("step 4) componentDidUpdate");
 //     console.log("prevProps", prevProps, "prevState", prevState);
 //   }
 
